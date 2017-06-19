@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+    <!-- Roboto fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/content-menu.js"></script>
+    <!--.plot-->
+    <script src="flot/jquery.flot.js"></script>
+    <!--Dropzone.js-->
+    <script src="dropzone-4.3.0/dist/dropzone.js"></script>
+    <link rel="stylesheet" href="dropzone-4.3.0/dist/dropzone.css">
+    <!--Tabs-->
+    <script src="js/tabs.js"></script>
+    <title>Companies Backoffice</title>
+    <link rel="shortcart icon" href="img/favicon.ico">
+</head>
+<body>
+    <div class="container-fluid wrapper-page">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 all-page">
+            	<!-- SIDEBAR -->
+                <div class="col-md-2 col-sm-2 col-xs-2 sidebar">                    
+                    <div class="col-md-12 sidebar-content">
+                        <div class="col-md-12 col-sm-12 col-xs-12 ava avatar-upload">
+                            <!-- <div class="avatar"></div> -->
+                            <div class="avatarochka">
+                                <img class="img-circle" src="img/avatar.png" alt="">
+                            </div>
+                            <div class="avatar-text">
+                                <p class="name color-text">Omar Najari</p>
+                                <p class="logout"><a href="">Logout</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 sidebar-menu">
+	                        <ul id="sidebar-navigation">
+	                    		<li><a href="index.html">Company</a></li>
+	                    		<li><a href="users.html">Users</a></li>
+	                    		<li><a href="earnings.html">Earnings</a></li>
+	                    		<li><a href="products.html">Products</a></li>
+	                    		<li><a href="requests.html">Requests</a></li>
+	                    		<li><a href="influencers.html" class="active">Influencers</a></li>
+	                    		<li><a href="settings.html">Settings</a></li>
+	                    	</ul>
+                    	</div>	
+                    </div>
+                </div>
+                <!-- SIDEBAR -->
+                <!-- MAIN -->
+                <div class="col-md-10 col-sm-10 col-xs-12 main">
+                    <div class="header text-center">
+                        <div class="logo-container">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <div class="top-menu">
+                        <ul class="users-menu">
+                            <li><a href="users.html" class="focus">Users</a></li>
+                            <li><a href="pending.html">Pending users</a></li>
+                        </ul>
+                    </div> -->
+                    <div class="col-md-12 col-sm-12 col-xs-12 content-main">  
+                    	<div class="title-page">
+                    		<h2 class="title">
+                    			Influencers
+                    		</h2>
+                    		<div class="custom-content text-right">
+                                <div class="search-wrapper">
+                                    <!-- <span class="input-group-btn search-btn">
+                                        <button class="btn btn-secondary search-bg" type="button">
+                                            <span class="glyphicon glyphicon-search"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" class="form-control search search-bg form-inp" placeholder="Search for users..."> -->
+                                    <form action="">
+                                        <input type="text" class="form-inp" name="search" placeholder="Search for">
+                                    </form>
+                                    <style>
+                                        /*input[type=text] {
+                                            -webkit-transition: width 0.4s ease-in-out;
+                                            transition: width 0.4s ease-in-out;
+                                        }*/
+
+                                        /* When the input field gets focus, change its width to 100% */
+                                        input[type=text]:focus {
+                                            width: 100%;
+                                            opacity: 1;
+                                        }
+                                    </style>
+                                </div>
+                                <form action="" id="custom-menu">
+                                    <ul class="custom-menu">
+                                        <li><a href="#"><span class="custom-item custom-remove">Remove</span></a></li>
+                                    </ul>
+                                </form>
+                    		</div>
+                    	</div>
+                    	<div class="col-md-12 content">
+	                        <table class="table table-responsive table-influencers">
+                                <thead>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox" id="checkbox-all" class="input-check">
+                                    </th>
+                                    <th>Influencers</th>
+                                    <th>User name</th>
+                                    <th>Social media</th>                                    
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="checkbox-1" class="input-check">
+                                        <!-- <label for="checkbox-1" class="label-check"></label> -->
+                                    </td>
+                                    <td><a href="influencer.html">Gary Vaynerchuk</a></td>
+                                    <td>garyvee</td>
+                                    <td>
+                                        <span>
+                                            <img src="img/instagram.png" alt=""><img src="img/fb.png" alt=""><img src="img/kolokol.png" alt=""><img
+                                            src="img/youtube.png" alt=""><img src="img/twitter.png" alt="">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="checkbox-2" class="input-check">
+                                        <!-- <label for="checkbox-1" class="label-check"></label> -->
+                                    </td>
+                                    <td><a href="influencer.html">Lewis Howes</a></td>
+                                    <td>lewishowes</td>
+                                    <td>
+                                        <span>
+                                            <img src="img/instagram.png" alt=""><img src="img/fb.png" alt="">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="checkbox-3" class="input-check">
+                                        <!-- <label for="checkbox-1" class="label-check"></label> -->
+                                    </td>
+                                    <td><a href="influencer.html">Simeon Panda</a></td>
+                                    <td>simeonpanda</td>
+                                    <td>
+                                        <span>
+                                            <img src="img/instagram.png" alt=""><img src="img/fb.png" alt="">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="checkbox-4" class="input-check">
+                                        <!-- <label for="checkbox-1" class="label-check"></label> -->
+                                    </td>
+                                    <td><a href="influencer.html">Pamela Reif</a></td>
+                                    <td>pamelareif</td>
+                                    <td>
+                                        <span>
+                                            <img src="img/instagram.png" alt=""><img src="img/fb.png" alt=""><img src="img/kolokol.png" alt="">
+                                        </span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>          
+                    </div>
+                </div>
+                <!-- MAIN -->
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

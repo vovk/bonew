@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Roboto fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!--.plot-->
+    <script src="flot/jquery.flot.js"></script>
+    <!-- Graphic -->
+    <script src="js/content-menu.js"></script>
+    <!--Tabs-->
+    <script src="js/tabs.js"></script>
+    <title>Influencers Backoffice</title>
+    <link rel="shortcart icon" href="img/favicon.ico">
+</head>
+<body>
+    <div class="container-fluid wrapper-page" id="influencer">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 all-page">
+            	<!-- SIDEBAR -->
+                <div class="col-md-2 col-sm-2 col-xs-2 sidebar">                    
+                    <div class="col-md-12 sidebar-content">
+                        <div class="col-md-12 col-sm-12 col-xs-12 ava avatar-upload">
+                            <!-- <div class="avatar"></div> -->
+                            <div class="avatarochka">
+                                <img class="img-circle" src="img/avatar.png" alt="">
+                            </div>
+                            <div class="avatar-text">
+                                <p class="name">Gary Vaynerchuk</p>
+                                <p class="logout"><a href="">Logout</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 sidebar-menu">
+	                        <ul id="sidebar-navigation">
+                                <li><a href="index.html">My profile</a></li>
+                                <li><a href="earnings.html" class="active">Earnings</a></li>
+                                <li><a href="products.html">Products</a></li>
+                                <li><a href="requests.html">Requests</a></li>
+                                <li><a href="referrals.html">Referrals</a></li>
+                                <li><a href="settings.html">Settings</a></li>
+                            </ul>
+                    	</div>	
+                    </div>
+                </div>
+                <!-- SIDEBAR -->
+                <!-- MAIN -->
+                <div class="col-md-10 col-sm-10 col-xs-12 main">
+                    <div class="fix">
+                        <div class="header text-center">
+                            <div class="logo-container">
+                                <a href="index.html">
+                                    <img src="img/logo2.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="top-menu">
+                            <ul class="users-menu">
+                                <li><a href="earnings.html" class="focus">Earnings</a></li>
+                                <li><a href="earn-sales.html">Sales</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 content-main clearfix">
+                    	<div class="title-page">
+                    		<h2 class="title">
+                    			Earnings
+                    		</h2>
+                    		<!-- <div class="custom-content text-right">
+                    			<ul class="custom-menu">
+                                    <li><a href="#"><span class="custom-item custom-delete">Delete</span></a></li>
+                                </ul>
+                    		</div> -->
+                    	</div>
+                    	<div class="col-md-12 col-sm-12 content">
+                            <div class="sales-wrap">
+                                <div class="col-md-12 select-earnings">
+                                    <select name="" id="" class="select-earn">
+                                        <option value="">1. - 2. June 2016</option>
+                                        <option value="">1. - 2. June 2016</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 earnings-total">
+                                    <div class="tp">
+                                        <p>Period</p>
+                                        <p><a href="#">1. - 7. June 2016</a></p>
+                                    </div>
+                                    <div class="te">
+                                        <p>Total earnings</p>
+                                        <p><a href="#">CHF 3,047.56</a></p>
+                                    </div>
+                                    <div class="ts">
+                                        <p>Total sales</p>
+                                        <p><a href="#">236</a></p>
+                                    </div>
+                                </div>
+                            </div>	                        
+                        </div>
+                        <div class="col-md-12 graph">
+                            <section class="wrapper">
+                                <ul class="tabs">
+                                    <li><a href="#tab1">Monthly view</a></li>
+                                    <li><a href="#tab2">Weeks view</a></li>
+                                    <li><a href="#tab3">Daily view</a></li>
+                                </ul>
+                                <div class="clr"></div>
+                                <section class="block">
+                                    <article id="tab1">
+                                        <div class="col-md-12 col-sm-12 graphic">
+                                            <div id="placeholder-1" style="width:100%;height:500px;"></div>
+                                        </div>
+                                    </article>
+                                    <article id="tab2">
+                                        <div class="col-md-12 col-sm-12 graphic">
+                                            <div id="placeholder-2" style="width:100%;height:500px;"></div>
+                                        </div>
+                                    </article>
+                                    <article id="tab3">
+                                        <div class="col-md-12 col-sm-12 graphic">
+                                            <div id="placeholder-3" style="width:100%;height:500px;"></div>
+                                        </div>
+                                    </article>
+                                </section>
+                            </section>
+                            <div id="placeholder-1" style="width:100%;height:500px"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MAIN -->
+            </div>
+        </div>
+    </div>
+    <!-- head -->
+    <script src="js/headhesive.min.js"></script>
+    <script src="js/headhesive_my.js"></script>    
+</body>
+</html>
