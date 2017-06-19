@@ -71,14 +71,14 @@
                         </div>
                         <div class="top-menu">
                             <ul class="users-menu">
-                                <li><a href="influencer.html" class="focus">Influencer</a></li>
+                                <li><a href="influencer.html">Influencer</a></li>
                                 <li class="drop"><a href="infl-over-earnings.html">Earnings</a>
                                     <ul class="secondary">
                                         <li><a href="infl-over-earnings.html.html">Overview</a></li>
                                         <li><a href="infl-over-earnings-sales.html.html">Products</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="infl-over-products.html">Products</a></li>
+                                <li><a href="infl-over-products.html" class="focus">Products</a></li>
                                 <li><a href="infl-over-referrals.html">Referrals</a></li>
                                 <li class="drop"><a href="infl-over-pendreq.html">Pending requests</a></li>
                                 <li class="back"><a href="">Back to overview</a></li>
@@ -88,59 +88,91 @@
                     <div class="col-md-12 col-sm-12 col-xs-12 content-main">  
                         <div class="title-page">
                             <h2 class="title">
-                                Gary Vaynerchuk
+                                Products
                             </h2>
-                            <div class="custom-content text-right">                                                        
-                                <form action="" id="custom-menu" style="overflow: visible;">
+                            <div class="custom-content text-right">   
+                                <div class="search-wrapper products">
+                                    <!-- <span class="input-group-btn search-btn">
+                                        <button class="btn btn-secondary search-bg" type="button">
+                                            <span class="glyphicon glyphicon-search"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" class="form-control search search-bg form-inp" placeholder="Search for users..."> -->
+                                    <form action="">
+                                        <input type="text" class="form-inp" name="search" placeholder="Search for products...">
+                                    </form>
+                                    <style>
+                                        /*input[type=text] {
+                                            -webkit-transition: width 0.4s ease-in-out;
+                                            transition: width 0.4s ease-in-out;
+                                        }*/
+
+                                        /* When the input field gets focus, change its width to 100% */
+                                        input[type=text]:focus {
+                                            width: 100%;
+                                            opacity: 1;
+                                        }
+                                    </style>
+                                </div>                                                     
+                                <form action="" id="custom-menu">
                                     <ul class="custom-menu">
-                                        <li><a href="edit.html"><span class="custom-item custom-edit">Edit</span></a></li>
-                                        <li><a href="#"><span class="custom-item custom-delete">Delete</span></a></li>
-                                        <li class="last">
-                                            <a href="#"><span class="custom-item custom-reset">Reset password</span></a>
-                                            <ul class="submenu">
-                                                <li><a href="#" data-toggle="modal" data-target="#myModal-reset"><span>Reset</span></a></li>
-                                                <li><a href="#" data-toggle="modal" data-target="#myModal-newpass"><span>Change</span></a></li>
-                                            </ul>
-                                        </li>
+                                        <li><a href="edit.html"><span class="custom-item custom-remove">Remove</span></a></li>
                                     </ul>
                                 </form>
                             </div>
                         </div>
                         <div class="col-md-12 content">
-                            <div class="company-edit">
-                                <p class="label-name">Name</p>
-                                <p class="label-name">User name</p>   
-                                <p class="label-name">Category</p>
-                                <p class="label-name">Phone</p>
-                                <p class="label-name">Email</p>                                
-                                <div class="clearfix"></div>
-                                <p class="label-value">Gary Vaynerchuk</p>
-                                <p class="label-value">garyvee</p>
-                                <p class="label-value">Business, Fitness</p>
-                                <p class="label-value">+41 44 260 66 61</p>
-                                <p class="label-value"><a href="#">gary@vaynermedia.com</a></p>
-                            </div>                 
-                            <div class="fixheight"></div> 
-                            <div class="company-edit">
-                                <p class="label-name">Main address</p>
-                                <p class="label-name"">Payment address</p>   
-                                <p class="label-name">Bank account</p>
-                                <p class="label-name">Website</p>
-                                <p class="label-name">Social media</p>
-                                <div class="clearfix"></div>       
-                                <p class="label-value">Löwenstrasse 25 <br> 8001 Zürich</p>
-                                <p class="label-value">
-                                    Same as head office address
-                                </p>
-                                <p class="label-value"><span id="iban">CH60 0900 0000 3183 72 36 9</span> <br> <span id="bicswift">POFICHBEXXX</span></p>
-                                <p class="label-value"><a href="#">www.garyvaynerchuk.com</a></p>
-                                <p class="label-value">
-                                    <span>
-                                        <a href="#"><img src="img/instagram.png" alt=""></a><a href="#"><img src="img/fb.png" alt=""></a><a href="#"><img src="img/kolokol.png" alt=""></a><a href="#"><img src="img/youtube.png" alt=""><a href="#"><img src="img/twitter.png" alt=""></a>
-                                    </span>
-                                </p> 
-                            </div>
-                        </div>          
+                            <table class="table table-responsive">
+                                <thead>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox" id="checkbox-all" class="input-check">
+                                    </th>
+                                    <th>Nr.</th>
+                                    <th>Product name</th>
+                                    <th>Total earnings</th>
+                                    <th>Units available</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="checkbox-1" class="input-check">
+                                    </td>
+                                    <td>1</td>
+                                    <td><a href="infl-over-product.html">Downtown CO 2010-2001</a></td>
+                                    <td>CHF 790.00</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="checkbox-2" class="input-check">
+                                    </td>
+                                    <td>2</td>
+                                    <td><a href="infl-over-product.html">Downtown CO 2010-2002</a></td>
+                                    <td>CHF 1,250.00</td>
+                                    <td>126</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="checkbox-3" class="input-check">
+                                    </td>
+                                    <td>3</td>
+                                    <td><a href="infl-over-product.html">Downtown CO 2010-2003</a></td>
+                                    <td>CHF 1,440.00</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="checkbox-4" class="input-check">
+                                    </td>
+                                    <td>4</td>
+                                    <td><a href="infl-over-product.html">Downtown CO 2010-2004</a></td>
+                                    <td>CHF 1,350.00</td>
+                                    <td>1,635</td>
+                                </tr>
+                                </tbody>
+                            </table>          
                     </div>
                 </div>
                 <!-- MAIN -->

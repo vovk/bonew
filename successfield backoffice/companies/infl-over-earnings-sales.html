@@ -15,6 +15,18 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+    <!--.plot-->
+    <script src="../../assets/flot/jquery.flot.js"></script>
+    <!-- Graphic -->
+    <script src="../../assets/js/content-menu.js"></script>
+    <!-- HTML5 Uploader -->
+    <script src="../../assets/html5-uploader/javascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../assets/html5-uploader/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="html5-uploader/header.css" /> -->
+    <!--Tabs-->
+    <script src="../../assets/js/tabs.js"></script>
+    <!-- FancyBox -->
+    <link rel="stylesheet" type="text/css" href="../../assets/fancybox/dist/jquery.fancybox.min.css">
     <!-- Toggle menu -->
     <script src="../../assets/js/menu-toggle.js"></script>
     <title>Successfield companies</title>
@@ -71,11 +83,10 @@
                         </div>
                         <div class="top-menu">
                             <ul class="users-menu">
-                                <li><a href="influencer.html" class="focus">Influencer</a></li>
-                                <li class="drop"><a href="infl-over-earnings.html">Earnings</a>
-                                    <ul class="secondary">
-                                        <li><a href="infl-over-earnings.html.html">Overview</a></li>
-                                        <li><a href="infl-over-earnings-sales.html.html">Products</a></li>
+                                <li><a href="influencer.html">Influencer</a></li>
+                                <li class="last"><a href="infl-over-earnings.html" class="no-focus">Earnings</a>
+                                    <ul class="submenu">
+                                        <li><a href="infl-over-earnings-sales.html" class="focus"><span>Sales</span></a></li>
                                     </ul>
                                 </li>
                                 <li><a href="infl-over-products.html">Products</a></li>
@@ -88,9 +99,9 @@
                     <div class="col-md-12 col-sm-12 col-xs-12 content-main">  
                         <div class="title-page">
                             <h2 class="title">
-                                Gary Vaynerchuk
+                                Earnings
                             </h2>
-                            <div class="custom-content text-right">                                                        
+                            <div class="custom-content text-right">                 
                                 <form action="" id="custom-menu" style="overflow: visible;">
                                     <ul class="custom-menu">
                                         <li><a href="edit.html"><span class="custom-item custom-edit">Edit</span></a></li>
@@ -107,46 +118,91 @@
                             </div>
                         </div>
                         <div class="col-md-12 content">
-                            <div class="company-edit">
-                                <p class="label-name">Name</p>
-                                <p class="label-name">User name</p>   
-                                <p class="label-name">Category</p>
-                                <p class="label-name">Phone</p>
-                                <p class="label-name">Email</p>                                
-                                <div class="clearfix"></div>
-                                <p class="label-value">Gary Vaynerchuk</p>
-                                <p class="label-value">garyvee</p>
-                                <p class="label-value">Business, Fitness</p>
-                                <p class="label-value">+41 44 260 66 61</p>
-                                <p class="label-value"><a href="#">gary@vaynermedia.com</a></p>
-                            </div>                 
-                            <div class="fixheight"></div> 
-                            <div class="company-edit">
-                                <p class="label-name">Main address</p>
-                                <p class="label-name"">Payment address</p>   
-                                <p class="label-name">Bank account</p>
-                                <p class="label-name">Website</p>
-                                <p class="label-name">Social media</p>
-                                <div class="clearfix"></div>       
-                                <p class="label-value">Löwenstrasse 25 <br> 8001 Zürich</p>
-                                <p class="label-value">
-                                    Same as head office address
-                                </p>
-                                <p class="label-value"><span id="iban">CH60 0900 0000 3183 72 36 9</span> <br> <span id="bicswift">POFICHBEXXX</span></p>
-                                <p class="label-value"><a href="#">www.garyvaynerchuk.com</a></p>
-                                <p class="label-value">
-                                    <span>
-                                        <a href="#"><img src="img/instagram.png" alt=""></a><a href="#"><img src="img/fb.png" alt=""></a><a href="#"><img src="img/kolokol.png" alt=""></a><a href="#"><img src="img/youtube.png" alt=""><a href="#"><img src="img/twitter.png" alt=""></a>
-                                    </span>
-                                </p> 
+                            <div class="col-md-12 col-sm-12 content">
+                                <div class="sales-wrap">
+                                    <div class="col-md-12 select-sales">
+                                        <select name="" id="" class="select-sal">
+                                            <option value="">1. - 2. June 2016</option>
+                                            <option value="">1. - 2. June 2016</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="tearn">
+                                    <table class="table table-responsive">
+                                        <thead>
+                                        <tr>
+                                            <th>Period</th>
+                                            <th>Revenue</th>
+                                            <th>Sales</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1. June 2016</td>
+                                            <td>CHF 503.50</td>
+                                            <td><a href="#" data-toggle="modal" data-target="#myModal-earnings">22</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2. June 2016</td>
+                                            <td>CHF 1,353.50</td>
+                                            <td><a href="#" data-toggle="modal" data-target="#myModal-earnings">37</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>                          
+                        </div>
+                        <!-- Modal earnings -->
+                        <div class="modal fade" id="myModal-earnings" role="dialog">
+                            <div class="modal-dialog earn-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">1.  June 2016</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <table class="table table-responsive table-earnings">
+                                                <thead>
+                                                <tr>
+                                                    <th>Product</th>
+                                                    <th>Sales type</th>
+                                                    <th>Earnings</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>Bellevue CO 2013-2001</td>
+                                                    <td>Direct Referral</td>
+                                                    <td>$ 63.37</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mammut Formel 90</td>
+                                                    <td>Indirect Referral</td>
+                                                    <td>$ 4.61</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Oyster Perpetual</td>
+                                                    <td>Loyal Referrer</td>
+                                                    <td>$ 260.00</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
-                        </div>          
+                        </div>
+                        <!-- Modal earnings end --> 
                     </div>
                 </div>
                 <!-- MAIN -->
             </div>
         </div>
     </div>
+    <!-- FancyBox -->
+    <script src="../../assets/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="../../assets/js/fancybox.js"></script>
     <!-- head -->
     <script src="../../assets/js/headhesive.min.js"></script>
     <script src="../../assets/js/headhesive_my.js"></script>

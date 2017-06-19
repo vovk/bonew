@@ -329,7 +329,9 @@ input.form-inp{
 }
 div.logo-container{
 	/*width: 102px;*/
-	height: 37px;
+	/*height: 37px;*/
+    width: auto;
+    height: auto;
 }
 div.logo-container img{
 	width: 100%;
@@ -509,11 +511,11 @@ ul.submenu > li > a{
 ul.submenu > li > a:hover {
     text-decoration: underline;
 }
-ul.custom-menu > li:hover > ul.submenu {
+/*ul.custom-menu > li:hover > ul.submenu {
     display: block;
     left: 27px;
     margin-top: 5px;
-}
+}*/
 .before-column{
     /*bottom: 50px;*/
     margin-bottom: 50px;
@@ -683,11 +685,13 @@ select.select-lang, select.select-curr{
     width: 220px;
 }
 #myModal-influencers .infl-dialog, 
-#myModal-earnings .earn-dialog{
+#myModal-earnings .earn-dialog,
+#myModal-referrals .ref-dialog{
     width: 1200px;
 }
 #myModal-influencers .infl-dialog .modal-header, 
-#myModal-earnings .earn-dialog .modal-header{
+#myModal-earnings .earn-dialog .modal-header,
+#myModal-referrals .ref-dialog .modal-header{
     border: none;
 }
 #myModal-influencers table thead>tr>th{
@@ -1188,4 +1192,7 @@ ul.full-width-menu li>ul{
 }
 ul.full-width-menu li:hover>ul{
     display: block;
+}
+.table-margin{
+    margin-top: 50px;
 }
