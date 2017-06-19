@@ -15,8 +15,6 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
-    <!--Tabs-->
-    <script src="../../assets/js/tabs.js"></script>   
     <!-- Toggle menu -->
     <script src="../../assets/js/menu-toggle.js"></script>
     <title>Successfield companies</title>
@@ -43,12 +41,18 @@
                             <ul id="sidebar-navigation">
                                 <li><a href="#">SuccessField</a></li>
                                 <li class="toggle-item"><a href="#">Companies</a>
-	                                <ul class="secondary">
-		                                <li><a href="over.html">Overview</a></li>
-		                                <li><a href="products.html">Products</a></li>
-	                                </ul>
+                                    <ul class="secondary" style="display: block;">
+                                        <li><a href="over.html" class="active">Overview</a></li>
+                                        <li><a href="products.html">Products</a></li>
+                                    </ul>
                                 </li>
-                                <li><a href="influencers.html">Influencers</a></li>
+                                <li class="toggle-item"><a href="influencers.html">Influencers</a>
+                                    <ul class="secondary">
+                                        <li><a href="">Overview</a></li>
+                                        <li><a href="">Earnings</a></li>
+                                        <li><a href="">Products</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="settings.html">Settings</a></li>
                             </ul>
                         </div>  
@@ -67,20 +71,15 @@
                         </div>
                         <div class="top-menu">
                             <ul class="users-menu">
-                                <li><a href="over.html" class="focus">Company</a></li>
-                                <li><a href="over-users.html">Users</a></li>
-                                <li class="drop"><a href="over-earnings.html">Earnings</a></li>
-                                <li class="drop"><a href="over-products.html">Products</a></li>
-                                <li class="drop"><a href="over-requests.html">Requests</a></li>
-                                <li><a href="over-influencers.html">Influencers</a></li>
-                                <li class="back"><a href="overview.html">Back to overview</a></li>
+                                <li><a href="over.html">Companies</a></li>
+                                <li><a href="pend-companies.html" class="focus">Pending companies</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 content-main">  
                         <div class="title-page">
                             <h2 class="title">
-                                Companies
+                                Pending companies
                             </h2>
                             <div class="custom-content text-right">
                                 <div class="search-wrapper products">
@@ -91,7 +90,7 @@
                                     </span>
                                     <input type="text" class="form-control search search-bg form-inp" placeholder="Search for users..."> -->
                                     <form action="">
-                                        <input type="text" class="form-inp" name="search" placeholder="Search for companies...">
+                                        <input type="text" class="form-inp" name="search" placeholder="Search for products...">
                                     </form>
                                     <style>
                                         /*input[type=text] {
@@ -105,100 +104,111 @@
                                             opacity: 1;
                                         }
                                     </style>
-                                </div>                                
-                                <form action="" id="custom-menu">
-                                    <ul class="custom-menu">
-                                        <li><a href="#" data-toggle='modal' data-target='#myModal-creg'><span class="custom-item custom-create">Create</span></a></li>
-                                        <li><a href="#"><span class="custom-item custom-delete">Delete</span></a></li>
-                                    </ul>
-                                </form>
+                                </div>  
                             </div>
                         </div>
                         <div class="col-md-12 content">
-                            <table class="table table-responsive">
+                            <table class="table table-responsive table-pending">
                                 <thead>
                                 <tr>
-                                    <th>
-                                        <input type="checkbox" id="checkbox-all" class="input-check">
-                                    </th>
                                     <th>Company</th>
                                     <th>Website</th>
                                     <th>E-mail</th>
                                     <th>Phone</th>
+                                    <th></th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>
-                                        <input type="checkbox" id="checkbox-1" class="input-check">
-                                    </td>
-                                    <td><a href="overview.html">Cornavin Watches AG</a></td>
+                                    <td><a href="#" data-toggle='modal' data-target='#myModal-pending'>Cornavin Watches AG</a></td>
                                     <td><a href="#">www.cornavin-watch.com</a></td>
                                     <td><a href="#">s.webb@sfinfluencers.com</a></td>
                                     <td>+41 79 302 36 50</td>
+                                    <td class="text-right">
+                                        <a href="#" class="accept">Accept</a>
+                                        <a href="#" class="reject">Decline</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <input type="checkbox" id="checkbox-2" class="input-check">
-                                    </td>
-                                    <td><a href="overview.html">Froogies AG</a></td>
+                                    <td><a href="#">Froogies AG</a></td>
                                     <td><a href="#">www.froogies.ch</a></td>
                                     <td><a href="#">t.kuelo@sfinfluencers.com</a></td>
                                     <td>+41 79 302 36 50</td>
+                                    <td class="text-right">
+                                        <a href="#" class="accept">Accept</a>
+                                        <a href="#" class="reject">Decline</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <input type="checkbox" id="checkbox-3" class="input-check">
-                                    </td>
-                                    <td><a href="overview.html">MVMT Watches Inc.</a></td>
+                                    <td><a href="#">MVMT Watches Inc.</a></td>
                                     <td><a href="#">www.mvmt.com</a></td>
                                     <td><a href="#">k.staubli@sfinfluencers.com</a></td>
                                     <td>+41 79 302 36 50</td>
+                                    <td class="text-right">
+                                        <a href="#" class="accept">Accept</a>
+                                        <a href="#" class="reject">Decline</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <input type="checkbox" id="checkbox-4" class="input-check">
-                                    </td>
-                                    <td><a href="overview.html">Asos.com Ltd.</a></td>
+                                    <td><a href="#">Asos.com Ltd.</a></td>
                                     <td><a href="#">www.asos.com</a></td>
                                     <td><a href="#">c.miguel@sfinfluencers.com</a></td>
                                     <td>+41 79 302 36 50</td>
+                                    <td class="text-right">
+                                        <a href="#" class="txt">Pending completion of registration</a>
+                                    </td>
                                 </tr>
                                 </tbody>
                             </table>
-                            <!-- Modal companies registration -->
-                            <div class="modal fade" id="myModal-creg" role="dialog">
-                                <div class="modal-dialog creg-dialog">
+                            <!-- Modal companies pending -->
+                            <div class="modal fade" id="myModal-pending" role="dialog">
+                                <div class="modal-dialog pending-dialog">
                                     <div class="modal-content">
-                                        <div class="modal-header">
+                                        <div class="modal-header">                                            
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">Send company's registration URL</h4>
+                                            <h4 class="modal-title">Cornavin Watch AG</h4>
+                                            <form action="" id="custom-menu">
+                                                <ul class="custom-menu">
+                                                    <li><a href="#"><span class="custom-item custom-create">Accept</span></a></li>
+                                                    <li><a href="#"><span class="custom-item custom-delete">Decline</span></a></li>
+                                                </ul>
+                                            </form>
                                         </div>
                                         <div class="modal-body">
-                                            <form>
-                                                <label for="first-name">Contact person</label>
-                                                <input type="text" class="edit" id="first-name" placeholder="First">
-                                                <input type="text" class="edit" id="last-name" placeholder="Last name">
-                                                <label for="companies">Company's</label>
-                                                <input type="text" class="edit" id="companies" placeholder="e.g. Space">
-                                                <label for="address">Address</label>
-                                                <input type="text" class="edit" id="address" placeholder="Street and house">
-                                                <input type="text" class="edit" id="address" placeholder="Postal code">
-                                                <input type="text" class="edit" id="address" placeholder="Location">
-                                                <label for="phone">Phone</label>
-                                                <input type="text" class="edit" id="phone" placeholder="e.g. elon@spacex.com">
-                                                <label for="address">Email</label>
-                                                <input type="text" class="edit" id="email" placeholder="e.g. elon@spacex.com">
-                                                <div class="modal-footer">
-                                                    <input type="submit" class="modal-cancel" value="Cancel" data-dismiss="modal">
-                                                    <input type="submit" class="modal-submit" value="Send">
-                                                </div>
-                                            </form>
+                                            <div class="company-edit">
+                                                <p class="label-name">Company's</p>
+                                                <p class="label-name">Contact person</p>   
+                                                <p class="label-name">Phone</p>
+                                                <p class="label-name">Email</p>
+                                                <div class="clearfix"></div>
+                                                <p class="label-value">Cornavin Watch AG</p>
+                                                <p class="label-value">Omar Najari</p>
+                                                <p class="label-value">+41 71 289 30 30</p>
+                                                <p class="label-value"><a href="#">info@cornavin-watch.ch</a></p>
+                                            </div>
+                                            <div class="fixheight"></div>
+                                            <div class="company-edit">
+                                                <p class="label-name">Address</p>
+                                                <p class="label-name">Website</p>   
+                                                <p class="label-name">Category</p>
+                                                <div class="clearfix"></div>
+                                                <p class="label-value">Löwenstrasse 25 <br> 8001 Zürich</p>
+                                                <p class="label-value"><a href="#">www.cornavin-watch.ch</a></p>   
+                                                <p class="label-value">Clothing, Shoes & Jewelry</p>
+                                            </div>
+                                            <div class="fixheight"></div>
+                                            <div class="company-edit">
+                                                <p class="label-name full">additional information</p>
+                                                <div class="clearfix"></div>
+                                                <p class="full">
+                                                    We sell high quality Swiss watches. Lore ipsum dolores hipopotamus aviarius romanus. We sell high quality Swiss watches. Lore ipsum dolores hipopotamus aviarius romanus.We sell high quality Swiss watches. Lore ipsum dolores hipopotamus aviarius romanus.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Modal companies registration end -->
+                            <!-- Modal companies pending end -->
                         </div>          
                     </div>
                 </div>

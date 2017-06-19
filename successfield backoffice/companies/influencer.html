@@ -15,12 +15,6 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
-    <!--.plot-->
-    <script src="flot/jquery.flot.js"></script>
-    <!-- Graphic -->
-    <script src="js/content-menu.js"></script>
-    <!--Tabs-->
-    <script src="js/tabs.js"></script>
     <!-- Toggle menu -->
     <script src="../../assets/js/menu-toggle.js"></script>
     <title>Successfield companies</title>
@@ -47,16 +41,16 @@
                             <ul id="sidebar-navigation">
                                 <li><a href="#">SuccessField</a></li>
                                 <li class="toggle-item"><a href="#">Companies</a>
-                                    <ul class="secondary" style="display: block;">
-                                        <li><a href="over.html" class="active">Overview</a></li>
+                                    <ul class="secondary">
+                                        <li><a href="over.html">Overview</a></li>
                                         <li><a href="products.html">Products</a></li>
                                     </ul>
                                 </li>
                                 <li class="toggle-item"><a href="influencers.html">Influencers</a>
-                                    <ul class="secondary">
-                                        <li><a href="">Overview</a></li>
-                                        <li><a href="">Earnings</a></li>
-                                        <li><a href="">Products</a></li>
+                                    <ul class="secondary" style="display: block;">
+                                        <li><a href="influencers.html" class="active">Overview</a></li>
+                                        <li><a href="infl-earnings.html">Earnings</a></li>
+                                        <li><a href="infl-referrals.html">Products</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="settings.html">Settings</a></li>
@@ -77,54 +71,69 @@
                         </div>
                         <div class="top-menu">
                             <ul class="users-menu">
-                                <li><a href="over.html" class="focus">Company</a></li>
-                                <li><a href="over-users.html">Users</a></li>
-                                <li class="drop"><a href="over-earnings.html">Earnings</a></li>
-                                <li class="drop"><a href="over-products.html">Products</a></li>
-                                <li class="drop"><a href="over-requests.html">Requests</a></li>
-                                <li><a href="over-influencers.html">Influencers</a></li>
-                                <li class="back"><a href="overview.html">Back to overview</a></li>
+                                <li><a href="influencers.html" class="focus">Influencer</a></li>
+                                <li class="drop"><a href="infl-over-earnings.html">Earnings</a>
+                                    <ul class="secondary">
+                                        <li><a href="infl-over-earnings.html.html">Overview</a></li>
+                                        <li><a href="infl-over-earnings-sales.html.html">Products</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="infl-over-products.html">Products</a></li>
+                                <li><a href="infl-over-referrals.html">Referrals</a></li>
+                                <li class="drop"><a href="infl-over-pendreq.html">Pending requests</a></li>
+                                <li class="back"><a href="">Back to overview</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 content-main">  
                         <div class="title-page">
                             <h2 class="title">
-                                Cornavin Watch AG
+                                Gary Vaynerchuk
                             </h2>
                             <div class="custom-content text-right">                                                            
                                 <form action="" id="custom-menu">
                                     <ul class="custom-menu">
                                         <li><a href="#"><span class="custom-item custom-edit">Edit</span></a></li>
                                         <li><a href="#"><span class="custom-item custom-delete">Delete</span></a></li>
+                                        <li class="last">
+                                            <a href="#"><span class="custom-item custom-reset">Reset password</span></a>
+                                            <ul class="submenu">
+                                                <li><a href="#" data-toggle="modal" data-target="#myModal-reset"><span>Reset</span></a></li>
+                                                <li><a href="#" data-toggle="modal" data-target="#myModal-newpass"><span>Change</span></a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </form>
                             </div>
                         </div>
                         <div class="col-md-12 content">
                             <div class="company-edit">
-                                <p class="label-name">Company's name</p>
-                                <p class="label-name">Phone</p>   
-                                <p class="label-name">Email</p>
-                                <p class="label-name">Website</p>                                
+                                <p class="label-name">Name</p>
+                                <p class="label-name">User name</p>   
+                                <p class="label-name">Category</p>
+                                <p class="label-name">Phone</p>
+                                <p class="label-name">Email</p>                                
                                 <div class="clearfix"></div>
-                                <p class="label-value">Cornavin Watch AG</p>
+                                <p class="label-value">Gary Vaynerchuk</p>
+                                <p class="label-value">garyvee</p>
+                                <p class="label-value">Business, Fitness</p>
                                 <p class="label-value">+41 44 260 66 61</p>
-                                <p class="label-value"><a href="#">info@cornavin-watches.ch</a></p>
                                 <p class="label-value"><a href="#">gary@vaynermedia.com</a></p>
                             </div>                 
                             <div class="fixheight"></div> 
                             <div class="company-edit">
-                                <p class="label-name">Address</p>
+                                <p class="label-name">Main address</p>
                                 <p class="label-name"">Payment address</p>   
                                 <p class="label-name">Bank account</p>
-                                <p class="label-name">Vatin</p>
+                                <p class="label-name">Website</p>
+                                <p class="label-name">Social media</p>
                                 <div class="clearfix"></div>       
                                 <p class="label-value">Löwenstrasse 25 <br> 8001 Zürich</p>
                                 <p class="label-value">
                                     Same as head office address
                                 </p>
                                 <p class="label-value"><span id="iban">CH60 0900 0000 3183 72 36 9</span> <br> <span id="bicswift">POFICHBEXXX</span></p>
+                                <p class="label-value"><a href="#">www.garyvaynerchuk.com</a></p>
                                 <p class="label-value">
                                     <span>
                                         <a href="#"><img src="img/instagram.png" alt=""></a><a href="#"><img src="img/fb.png" alt=""></a><a href="#"><img src="img/kolokol.png" alt=""></a><a href="#"><img src="img/youtube.png" alt=""><a href="#"><img src="img/twitter.png" alt=""></a>

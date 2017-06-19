@@ -115,7 +115,7 @@ ul li.toggle-item{
     background: url(successfield%20backoffice/companies/img/arrow.png) no-repeat no-repeat 55% 10px;
 }
 ul.users-menu li.drop{
-    background: url(successfield%20backoffice/companies/img/arrow.png) no-repeat no-repeat 90% 50%;
+    background: url(successfield%20backoffice/companies/img/arrow.png) no-repeat no-repeat 100% 50%;
 }
 div.fix{
     background: #fff;
@@ -462,7 +462,7 @@ div.create-user{
 }
 /*MODAL END*/
 #custom-menu{
-    overflow: auto;
+    /*overflow: auto;*/
 }
 ul.custom-menu{
     list-style: none;
@@ -542,11 +542,16 @@ ul.users-menu{
     opacity: 1;
     max-height: 100%;
     overflow: inherit;
-	/*-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-ms-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;*/
+    transition: all .3s ease-in-out,
+        opacity .4s ease-in-out;
+}
+.custom-menu li.last:hover ul.submenu{
+    padding-top: 10px;
+    /*display: block;*/
+    left: 27px;
+    opacity: 1;
+    max-height: 200px;
+    /*overflow: inherit;*/
     transition: all .3s ease-in-out,
         opacity .4s ease-in-out;
 }
@@ -623,10 +628,10 @@ a.accept, a.reject, a.rem, a.txt{
 .table-influencers{
     margin-top: 50px;
 }
-.table-influencers img{
+.table-influencers img, .table-pending img{
     margin-right: 40px;
 }
-.table-influencers img:last-child{
+.table-influencers img:last-child, .table-pending img:last-child{
     margin-right: 0;
 }
 .infl{
@@ -1098,6 +1103,9 @@ table.infl-sales{
 }
 table.table-products a.accept{
     /*margin-right: 25px;*/
+    margin: 0 100px 0 0;
+}
+table.table-pending a.accept{
     margin: 0 100px 0 0;
 }
 .registration{
