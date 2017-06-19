@@ -462,7 +462,7 @@ div.create-user{
 }
 /*MODAL END*/
 #custom-menu{
-    /*overflow: auto;*/
+    overflow: hidden;
 }
 ul.custom-menu{
     list-style: none;
