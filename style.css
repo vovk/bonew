@@ -231,6 +231,12 @@ div.content.company{
 span#iban{
     padding-left: 80px;
 }
+#inst{
+    background: url(successfield%20backoffice/companies/img/instagram.png) no-repeat no-repeat left center;
+    padding-left: 40px;
+    font-size: 10pt;
+    box-sizing: border-box;
+}
 label{
     font-size: 12pt;
     font-family: "Roboto";
@@ -326,6 +332,9 @@ input.form-inp{
 }
 .footer{
     padding-top: 100px;
+}
+.bott{
+    margin-bottom: 50px;
 }
 div.logo-container{
 	/*width: 102px;*/
