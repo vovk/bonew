@@ -117,6 +117,9 @@ ul li.toggle-item{
 ul.users-menu li.drop{
     background: url(successfield%20backoffice/companies/img/arrow.png) no-repeat no-repeat 100% 50%;
 }
+ul.users-menu li.long{
+    width: 200px;
+}
 div.fix{
     background: #fff;
     /*position: fixed;*/
@@ -992,6 +995,9 @@ div.images-requests{
     font-size: 13pt;
     width: 80%;
     margin: 10px auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
 }
 .appellative a{    
     color: #3772F2;
