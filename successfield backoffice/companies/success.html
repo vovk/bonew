@@ -42,16 +42,16 @@
                         <div class="col-md-12 sidebar-menu">
                             <ul id="sidebar-navigation">
                                 <li class="toggle-item"><a href="#">SuccessField</a>
-                                    <ul class="secondary">
-                                        <li><a href="success.html">Users</a></li>
+                                    <ul class="secondary" style="display: block;">
+                                        <li><a href="success.html" class="active">Users</a></li>
                                         <li><a href="success-earnings.html">Earnings</a></li>
                                     </ul>
                                 </li>
                                 <li class="toggle-item"><a href="#">Companies</a>
-	                                <ul class="secondary" style="display: block;">
-		                                <li><a href="over.html" class="active">Overview</a></li>
-		                                <li><a href="products.html">Products</a></li>
-	                                </ul>
+                                    <ul class="secondary">
+                                        <li><a href="over.html">Overview</a></li>
+                                        <li><a href="products.html">Products</a></li>
+                                    </ul>
                                 </li>
                                 <li class="toggle-item"><a href="influencers.html">Influencers</a>
                                     <ul class="secondary">
@@ -78,22 +78,15 @@
                         </div>
                         <div class="top-menu">
                             <ul class="users-menu">
-                                <!-- <li><a href="over.html" class="focus">Company</a></li>
-                                <li><a href="over-users.html">Users</a></li>
-                                <li class="drop"><a href="over-earnings.html">Earnings</a></li>
-                                <li class="drop"><a href="over-products.html">Products</a></li>
-                                <li class="drop"><a href="over-requests.html">Requests</a></li>
-                                <li><a href="over-influencers.html">Influencers</a></li>
-                                <li class="back"><a href="overview.html">Back to overview</a></li> -->
-                                <li><a href="over.html" class="focus">Company</a></li>
-                                <li><a href="pend-companies.html">Pending company</a></li>
+                                <li><a href="success.html" class="focus">Users</a></li>
+                                <li><a href="success-pending-users.html">Pending users</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 content-main">  
                         <div class="title-page">
                             <h2 class="title">
-                                Companies
+                                Users
                             </h2>
                             <div class="custom-content text-right">
                                 <div class="search-wrapper products">
@@ -104,7 +97,7 @@
                                     </span>
                                     <input type="text" class="form-control search search-bg form-inp" placeholder="Search for users..."> -->
                                     <form action="">
-                                        <input type="text" class="form-inp" name="search" placeholder="Search for companies...">
+                                        <input type="text" class="form-inp" name="search" placeholder="Search for users...">
                                     </form>
                                     <style>
                                         /*input[type=text] {
@@ -121,7 +114,7 @@
                                 </div>                                
                                 <form action="" id="custom-menu">
                                     <ul class="custom-menu">
-                                        <li><a href="#" data-toggle='modal' data-target='#myModal-creg'><span class="custom-item custom-create">Create</span></a></li>
+                                        <li><a href="#" data-toggle='modal' data-target='#myModal-successfield'><span class="custom-item custom-create">Create</span></a></li>
                                         <li><a href="#"><span class="custom-item custom-delete">Delete</span></a></li>
                                     </ul>
                                 </form>
@@ -134,10 +127,10 @@
                                     <th>
                                         <input type="checkbox" id="checkbox-all" class="input-check">
                                     </th>
-                                    <th>Company</th>
-                                    <th>Website</th>
+                                    <th>Users</th>
+                                    <th>Username</th>
+                                    <th>Rights</th>
                                     <th>E-mail</th>
-                                    <th>Phone</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -145,63 +138,59 @@
                                     <td>
                                         <input type="checkbox" id="checkbox-1" class="input-check">
                                     </td>
-                                    <td><a href="overview.html">Cornavin Watches AG</a></td>
-                                    <td><a href="#">www.cornavin-watch.com</a></td>
+                                    <td><a href="success-user.html">Selby Webb</a></td>
+                                    <td>selbywebb</td>
+                                    <td>admin</td>
                                     <td><a href="#">s.webb@sfinfluencers.com</a></td>
-                                    <td>+41 79 302 36 50</td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input type="checkbox" id="checkbox-2" class="input-check">
+                                        <input type="checkbox" id="checkbox-1" class="input-check">
                                     </td>
-                                    <td><a href="overview.html">Froogies AG</a></td>
-                                    <td><a href="#">www.froogies.ch</a></td>
+                                    <td><a href="success-user.html">Selby Webb</a></td>
+                                    <td>tracykuelo</td>
+                                    <td>admin</td>
                                     <td><a href="#">t.kuelo@sfinfluencers.com</a></td>
-                                    <td>+41 79 302 36 50</td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input type="checkbox" id="checkbox-3" class="input-check">
+                                        <input type="checkbox" id="checkbox-1" class="input-check">
                                     </td>
-                                    <td><a href="overview.html">MVMT Watches Inc.</a></td>
-                                    <td><a href="#">www.mvmt.com</a></td>
+                                    <td><a href="success-user.html">Kevin Staubli</a></td>
+                                    <td>kevinstaubli</td>
+                                    <td>admin</td>
                                     <td><a href="#">k.staubli@sfinfluencers.com</a></td>
-                                    <td>+41 79 302 36 50</td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input type="checkbox" id="checkbox-4" class="input-check">
+                                        <input type="checkbox" id="checkbox-1" class="input-check">
                                     </td>
-                                    <td><a href="overview.html">Asos.com Ltd.</a></td>
-                                    <td><a href="#">www.asos.com</a></td>
+                                    <td><a href="success-user.html">Calvino Miguel</a></td>
+                                    <td>calvinomiguel</td>
+                                    <td>admin</td>
                                     <td><a href="#">c.miguel@sfinfluencers.com</a></td>
-                                    <td>+41 79 302 36 50</td>
                                 </tr>
                                 </tbody>
                             </table>
-                            <!-- Modal companies registration -->
-                            <div class="modal fade" id="myModal-creg" role="dialog">
-                                <div class="modal-dialog creg-dialog">
+                            <!-- Modal successfield -->
+                            <div class="modal fade" id="myModal-successfield" role="dialog">
+                                <div class="modal-dialog">
                                     <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">Send company's registration URL</h4>
-                                        </div>
                                         <div class="modal-body">
                                             <form>
-                                                <label for="first-name">Contact person</label>
-                                                <input type="text" class="edit" id="first-name" placeholder="First">
-                                                <input type="text" class="edit" id="last-name" placeholder="Last name">
-                                                <label for="companies">Company's</label>
-                                                <input type="text" class="edit" id="companies" placeholder="e.g. Space">
-                                                <label for="address">Address</label>
-                                                <input type="text" class="edit" id="address" placeholder="Street and house">
-                                                <input type="text" class="edit" id="address" placeholder="Postal code">
-                                                <input type="text" class="edit" id="address" placeholder="Location">
-                                                <label for="phone">Phone</label>
-                                                <input type="text" class="edit" id="phone" placeholder="e.g. elon@spacex.com">
-                                                <label for="address">Email</label>
-                                                <input type="text" class="edit" id="email" placeholder="e.g. elon@spacex.com">
+                                                <label for="first-name">First Name</label>
+                                                <input type="text" class="edit" id="first-name" placeholder="e.g. John">
+                                                <label for="last-name">Last Name</label>
+                                                <input type="text" class="edit" id="last-name" placeholder="e.g. Doe">
+                                                <label for="user-rights">User rights</label>
+                                                <select name="" id="user-rights" class="edit" placeholder="Choose the user‘s rights">
+                                                    <option value="0" select="selected">Choose the user‘s rights</option>
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                    <option value="">3</option>
+                                                </select>
+                                                <label for="phone">Email</label>
+                                                <input type="text" class="edit" id="phone" placeholder="e.g. johndoe@successfield.com">
                                                 <div class="modal-footer">
                                                     <input type="submit" class="modal-cancel" value="Cancel" data-dismiss="modal">
                                                     <input type="submit" class="modal-submit" value="Send">
@@ -211,7 +200,21 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Modal companies registration end -->
+                            <!-- Modal successfield end -->
+                            <!-- Modal successfull -->
+                            <div class="modal fade" id="myModal-success" role="dialog">
+                                <div class="modal-dialog user-success">
+                                    <div class="modal-content user-success-content">
+                                        <div class="modal-body">
+                                            <form>
+                                                <span>A registration URL has been successfully sent.</span>
+                                            </form>
+                                        </div>                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Modal successfull end -->
                         </div>          
                     </div>
                 </div>

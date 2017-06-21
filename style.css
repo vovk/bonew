@@ -366,7 +366,7 @@ div.logo-container img{
 }
 #myModal select{
     width: 100%;
-    height: 30px;
+    /*height: 30px;*/
 }
 div.create-user{
     margin: 150px auto 10px auto;
@@ -1062,20 +1062,28 @@ table.over-requests-app a.accept{
 #myModal-changepass .label-name, #myModal-changepass .label-value{
     width: 100%;
 }
-#myModal-creg .edit, #myModal-pp .edit{
+#myModal-creg .edit, 
+#myModal-pp .edit,
+#myModal-successfield .edit{
     width: 100%;
 }
-#myModal-creg div.modal-header,  #myModal-pp div.modal-header{
+#myModal-creg div.modal-header,  
+#myModal-pp div.modal-header{
     border-bottom: none;
 }
-#myModal-creg div.modal-footer, #myModal-pp div.modal-footer{
+#myModal-creg div.modal-footer, #myModal-pp div.modal-footer,
+#myModal-successfield div.modal-footer{
     border-top: none;
     text-align: left;
 }
-#myModal-creg div.modal-footer .modal-submit, #myModal-pp div.modal-footer .modal-submit{
+#myModal-creg div.modal-footer .modal-submit, 
+#myModal-pp div.modal-footer .modal-submit,
+#myModal-successfield div.modal-footer .modal-submit{
     margin-left: 40px;
 }
-#myModal-creg label, #myModal-pp label{
+#myModal-creg label, 
+#myModal-pp label,
+#myModal-successfield form label{
     text-transform: uppercase;
     font-size: 11pt;
     font-family: "Roboto";
@@ -1210,4 +1218,23 @@ ul.full-width-menu li:hover>ul{
 }
 .table-margin{
     margin-top: 50px;
+}
+.org-edit{
+    font-size: 12pt;
+    font-family: "Roboto";
+}
+.main-cat{
+    width: auto;
+    float: left;
+    margin-right: 50px;
+}
+.result-for-categories{
+    width: auto;
+    float: left;
+}
+.categories label{
+    font-size: 12pt;
+}
+.vision{
+    display: block!important;
 }

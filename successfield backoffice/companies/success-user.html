@@ -15,6 +15,8 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+    <!--Tabs-->
+    <script src="../../assets/js/tabs.js"></script>   
     <!-- Toggle menu -->
     <script src="../../assets/js/menu-toggle.js"></script>
     <title>Successfield companies</title>
@@ -39,7 +41,12 @@
                         </div>
                         <div class="col-md-12 sidebar-menu">
                             <ul id="sidebar-navigation">
-                                <li><a href="#">SuccessField</a></li>
+                                <li class="toggle-item"><a href="#">SuccessField</a>
+                                    <ul class="secondary" style="display: block;">
+                                        <li><a href="success.html" class="active">Users</a></li>
+                                        <li><a href="success-earnings.html">Earnings</a></li>
+                                    </ul>
+                                </li>
                                 <li class="toggle-item"><a href="#">Companies</a>
                                     <ul class="secondary">
                                         <li><a href="over.html">Overview</a></li>
@@ -47,10 +54,10 @@
                                     </ul>
                                 </li>
                                 <li class="toggle-item"><a href="influencers.html">Influencers</a>
-                                    <ul class="secondary" style="display: block;">
-                                        <li><a href="influencers.html" class="active">Overview</a></li>
+                                    <ul class="secondary">
+                                        <li><a href="influencers.html">Overview</a></li>
                                         <li><a href="infl-earnings.html">Earnings</a></li>
-                                        <li><a href="infl-referrals.html">Referrals</a></li>
+                                        <li><a href="infl-referrals.html">Products</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="settings.html">Settings</a></li>
@@ -71,26 +78,16 @@
                         </div>
                         <div class="top-menu">
                             <ul class="users-menu">
-                                <li><a href="influencer.html" class="focus">Influencer</a></li>
-                                <li class="drop"><a href="infl-over-earnings.html">Earnings</a>
-                                    <ul class="secondary">
-                                        <li><a href="infl-over-earnings.html.html">Overview</a></li>
-                                        <li><a href="infl-over-earnings-sales.html.html">Products</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="infl-over-products.html">Products</a></li>
-                                <li><a href="infl-over-referrals.html">Referrals</a></li>
-                                <li class="drop long"><a href="infl-over-pendreq.html">Pending requests</a></li>
-                                <li class="back"><a href="influencers.html">Back to overview</a></li>
+                                <li class="back"><a href="success.html">Back to users</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 content-main">  
                         <div class="title-page">
                             <h2 class="title">
-                                Gary Vaynerchuk
+                                Kevin Staubli
                             </h2>
-                            <div class="custom-content text-right">            
+                            <div class="custom-content text-right">       
                                 <form action="" id="custom-menu" style="overflow: visible;">
                                     <ul class="custom-menu">
                                         <li><a href="edit.html"><span class="custom-item custom-edit">Edit</span></a></li>
@@ -108,39 +105,69 @@
                         </div>
                         <div class="col-md-12 content">
                             <div class="company-edit">
-                                <p class="label-name">Name</p>
+                                <p class="label-name">User's Name</p>
                                 <p class="label-name">User name</p>   
-                                <p class="label-name">Category</p>
-                                <p class="label-name">Phone</p>
-                                <p class="label-name">Email</p>                                
+                                <p class="label-name">Rights</p>
+                                <p class="label-name">E-mail</p>                               
                                 <div class="clearfix"></div>
-                                <p class="label-value">Gary Vaynerchuk</p>
+                                <p class="label-value">Kevin Staubli</p>
                                 <p class="label-value">garyvee</p>
-                                <p class="label-value">Business, Fitness</p>
-                                <p class="label-value">+41 44 260 66 61</p>
-                                <p class="label-value"><a href="#">gary@vaynermedia.com</a></p>
-                            </div>                 
-                            <div class="fixheight"></div> 
-                            <div class="company-edit">
-                                <p class="label-name">Main address</p>
-                                <p class="label-name"">Payment address</p>   
-                                <p class="label-name">Bank account</p>
-                                <p class="label-name">Website</p>
-                                <p class="label-name">Social media</p>
-                                <div class="clearfix"></div>       
-                                <p class="label-value">Löwenstrasse 25 <br> 8001 Zürich</p>
-                                <p class="label-value">
-                                    Same as head office address
-                                </p>
-                                <p class="label-value"><span id="iban">CH60 0900 0000 3183 72 36 9</span> <br> <span id="bicswift">POFICHBEXXX</span></p>
-                                <p class="label-value"><a href="#">www.garyvaynerchuk.com</a></p>
-                                <p class="label-value">
-                                    <span>
-                                        <a href="#"><img src="img/instagram.png" alt=""></a><a href="#"><img src="img/fb.png" alt=""></a><a href="#"><img src="img/kolokol.png" alt=""></a><a href="#"><img src="img/youtube.png" alt=""><a href="#"><img src="img/twitter.png" alt=""></a>
-                                    </span>
-                                </p> 
+                                <p class="label-value">admin</p>
+                                <p class="label-value"><a href="#">k.staubli@sfinfluencers.com</a></p>
                             </div>
-                        </div>          
+                        </div>
+                            <!-- Modal reset password -->
+                            <div class="modal fade" id="myModal-reset" role="dialog">
+                                <div class="modal-dialog reset-pass">
+                                    <div class="modal-content reset-pass-content">
+                                        <div class="modal-body">
+                                            <form>
+                                                <span>Are you sure you want to reset this user‘s account password?</span>
+                                                <div class="modal-footer">
+                                                    <input type="submit" class="modal-cancel" value="Cancel" data-dismiss="modal">
+                                                    <input type="submit" class="modal-submit" value="Save">
+                                                </div>
+                                            </form>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal reset password end -->
+                            <!-- Modal reset password success -->
+                            <div class="modal fade" id="myModal-reset-requestlink" role="dialog">
+                                <div class="modal-dialog reset-requestlink">
+                                    <div class="modal-content reset-requestlink-content">
+                                        <div class="modal-body">
+                                            <form>
+                                                <span>We received your request for a password reset link. The user should receive the email soon.</span>
+                                            </form>
+                                        </div>                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Modal reset password success end -->
+                            <!-- Modal new-pass -->
+                            <div class="modal fade" id="myModal-newpass" role="dialog">
+                                <div class="modal-dialog newpass-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <form>
+                                                <p class="label-name">New password</p>
+                                                <p class="label-value"><input type="text" class="edit pass"></p>
+                                                <p class="label-name">Confirm password</p>
+                                                <p class="label-value"><input type="text" class="edit confpass"></p>
+                                                <div class="modal-footer">                    
+                                                    <input type="submit" class="modal-cancel" value="Cancel" data-dismiss="modal">
+                                                    <input type="submit" class="modal-submit" value="Save">
+                                                </div>
+                                            </form>
+                                        </div>                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Modal new-pass end -->         
                     </div>
                 </div>
                 <!-- MAIN -->
