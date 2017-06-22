@@ -1238,3 +1238,8 @@ ul.full-width-menu li:hover>ul{
 .vision{
     display: block!important;
 }
+.dynamic-res{
+    background: #eee;
+    width: auto;
+    float: left;
+}
