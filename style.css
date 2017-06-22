@@ -1223,13 +1223,7 @@ ul.full-width-menu li:hover>ul{
     font-size: 12pt;
     font-family: "Roboto";
 }
-.main-cat{
-    width: auto;
-    float: left;
-    margin-right: 50px;
-}
-.result-for-categories{
-    width: auto;
+.categories-wrap{
     float: left;
 }
 .categories label{
@@ -1237,9 +1231,4 @@ ul.full-width-menu li:hover>ul{
 }
 .vision{
     display: block!important;
-}
-.dynamic-res{
-    background: #eee;
-    width: auto;
-    float: left;
 }
